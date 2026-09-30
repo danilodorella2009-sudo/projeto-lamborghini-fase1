@@ -6,8 +6,8 @@ Um site institucional e promocional de alta performance inspirado no ecossistema
 
 ## 🔗 Links Rápidos
 
-* 📄 **[Tópico / Código HTML](#)** *(Insira aqui o link para o código do HTML)*
-* 📚 **[Documentação Completa](#)** *(Insira aqui o link para a documentação)*
+* 📄 **[Tópico / Código HTML](#)** *(lamborghini)*
+* 📚 **[Documentação Completa](#)** *(documentacao-site-lamborghini (2).pdf)*
 
 ---
 
