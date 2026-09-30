@@ -1,95 +1,71 @@
-# 🏎️ AUTOMOBILI LAMBORGHINI — Site Institucional & Configurador
+# 🚀 Minhas Atividades de Java Web — Edição Lamborghini
 
-Um site institucional e promocional de alta performance inspirado no ecossistema digital da **Automobili Lamborghini**. Desenvolvido com **HTML5**, **CSS3** e **JavaScript Vanilla**, o projeto foca na experiência do usuário (*UX/UI*), oferecendo interatividades fluidas, animações nativas e um estúdio interativo para o modelo **Revuelto SV**.
-
----
-
-## 🔗 Links Rápidos
-
-* 📄 **[[Tópico / Código HTML](#)** *(lamborghini)*
-* 📚 **[Documentação Completa](#)** *(documentacao-site-lamborghini (2).pdf)*
+Este repositório foi criado para centralizar e organizar todas as atividades práticas desenvolvidas durante as aulas de desenvolvimento web com Java. O objetivo principal é evoluir conceitos de Orientação a Objetos (como encapsulamento e herança) e manipulação de arquivos locais (TXT e CSV), integrando-os diretamente a serviços web e APIs com retornos em formato JSON sobre o universo da **Automobili Lamborghini**.
 
 ---
 
-## 🗺️️ 1. Mapeamento de Rotas e Navegação
+## 📌 Índice do Projeto
 
-A navegação foi projetada para simular a experiência fluida do site oficial da Lamborghini:
-
-* **Página Inicial (`index.html`)**
-  * 🔍 Ícone de busca ➔ Redireciona para a página de busca (`search.html`).
-  * 📍 "Find your dealer" ➔ Acesso direto ao localizador de concessionárias (`dealer-locator.html`).
-  * ⚡ "Explore the model" / "Iniciar configuração" ➔ Entrada para o configurador interativo (`configurador/configurator.html`).
-  * 🏎️ Linha de Modelos ➔ Acesso às páginas exclusivas do **Urus SE**, **Miura SV** e **Revuelto SV**.
-  * 📋 Menu Principal ➔ Redireciona para o catálogo geral de modelos (`models.html`).
-* **Páginas Específicas de Veículos e Subpastas**
-  * ⬅️ Navegação e botões de retorno integrados direcionando de volta para a Home (`index.html`).
+Abaixo estão listados os tópicos principais com os sistemas desenvolvidos e o acesso às documentações técnicas.
 
 ---
 
-## 💻 2. Visão Geral das Páginas
+## 📖 1. Documentações
 
-### 2.1 Página Inicial (`index.html`)
-* **Header Fixo:** Contém o menu overlay, logo oficial e ícones de suporte/busca.
-* **Hero Carrossel:** Apresentação em vídeo (`.mp4`) do Revuelto SV e imagens em alta resolução do Miura SV e Urus SE, com transição automática e pausa manual.
-* **Carrossel de Modelos:** Vitrine em fundo claro para Revuelto, Urus e Temerario com seletores de variantes e indicadores visuais.
-* **Dealer Locator:** Seção panorâmica com chamada para busca de concessionárias.
-* **Configurador (Preview):** Abas interativas para atalho de configuração e consulta de modelos.
-* **Suporte & Rodapé:** Módulo deslizante "ASK ME", links corporativos e termos legais.
+Toda a API do projeto foi modelada e documentada para garantir padronização, testes práticos e fácil integração.
 
-### 2.2 Catálogo de Veículos (`models.html`)
-* Leitura em tema claro da vitrine de automóveis com barra de navegação escura.
-* Atualização dinâmica de especificações técnicas, slogans e imagens de fundo conforme o modelo selecionado.
+- **Padrão OpenAPI 3.0.3:** Especificação completa com descrições de rotas, schemas de dados, códigos de resposta HTTP e exemplos de payload JSON.
+- **Testes Interativos:** Compatível diretamente com o **Swagger Editor** e **Postman**.
 
-### 2.3 Sistema de Busca (`search.html`)
-* Interface minimalista focada na busca de modelos, serviços de propriedade (*Ownership*) e soluções personalizadas (*Custom Solutions*).
-
-### 2.4 Localizador de Concessionárias (`dealer-locator.html`)
-* Painel lateral interativo com divisões por tipo de serviço (*Showroom*, *Service*, *Collision Center*), seleção de países e mapa ilustrativo.
-
-### 2.5 Páginas Exclusivas de Modelos (`revuelto-sv`, `miura-sv`, `urus-se`)
-* Apresentação de dados de performance (potência em CV, aceleração 0-100 km/h e velocidade máxima).
-* Seções dedicadas à aerodinâmica, conjunto mecânico e seletores de modos de condução (ex: Strada, Sport, Corsa, Neve, Terra).
-
-### 2.6 Estúdio Virtual (`configurador/configurator.html`)
-* Visualizador interativo com troca de cor do veículo em tempo real (*Azzurro Thetys*, *Rosso Mars*, *Bianco Monocerus*).
-* Modais integrados para seleção de idiomas e geração de código de configuração único (**L-Code**).
+📄 **[Acessar Arquivo Swagger (swagger.yaml)](#)** *(Substitua este link pelo arquivo do seu projeto)*
 
 ---
 
-## ⚙️ 3. Recursos Técnicos e Interatividade
+## 🏎️ 2. Linha Automobili Lamborghini
 
-* **Modais e Menus Sem JavaScript (`:target`):** A abertura e o fechamento do menu principal, chats e janelas modais utilizam a pseudo-classe CSS `:target`, alterando o estado visual via link âncora (`#menuOverlay`) sem sobrecarregar a execução de scripts.
-* **Hero Automático Nativo em CSS (`@keyframes`):** A alternância dos mídias no cabeçalho utiliza animações CSS puras com suporte a pausa através de um `<input type="checkbox">` oculto acionando a propriedade `animation-play-state: paused`.
-* **Lógica Dinâmica em Vanilla JS (`script.js`):** Gerencia a navegação circular do carrossel, troca de abas de variantes e atualização dos detalhes técnicos sem bibliotecas externas.
+Sistemas e endpoints focados na gestão de garagem, modelos de alta performance e processamento de configurações personalizadas.
 
----
+### 🎵 1. A Garagem Virtual (Playlist de Superesportivos)
+- **O que faz:** Transforma um programa de terminal em uma garagem inteligente. O sistema lê um arquivo de texto local com os veículos cadastrados na coleção, converte os dados em objetos Java (modelo, motorização e ano de lançamento) e os envia para o cliente em formato JSON. Também permite cadastrar novos veículos sem apagar os existentes.
+- **Endpoints desenvolvidos:**
+  * `GET /garagem/listar` — Lê o arquivo `minha_garagem.txt` linha por linha e retorna a lista completa de carros em JSON.
+  * `POST /garagem/adicionar` — Recebe um novo modelo no corpo da requisição e salva no final do arquivo em modo append.
+- **Conceitos aplicados:** Criação de endpoints HTTP, manipulação de arquivos com `FileReader`/`BufferedReader` e `FileWriter`/`BufferedWriter` (modo append), e configuração de CORS para testes via Swagger Editor.
 
-## 🎨 4. Diretrizes de Design & Tipografia
-
-* **Paleta de Cores:**
-  * **Amarelo Lamborghini (Destaque):** `#FFC000`
-  * **Fundo Escuro (Dark Mode):** `#000000` / `#181818`
-  * **Estúdio / Configurador:** `#111214`
-  * **Textos e Linhas:** `#FFFFFF`, `#9A9A9A`, `#555555`
-* **Tipografia Responsiva:** Google Fonts (**Anton**, **Oswald**, **Inter** e **Roboto**) ajustadas dinamicamente com a função CSS `clamp()`.
+📂 **[Acessar arquivos desta atividade](#)**
 
 ---
 
-## 🔧 5. Requisitos e Execução
+### ⚔️ 2. O Catálogo de Modelos Web
+- **O que faz:** Simula o backend de uma vitrine de seleção de superesportivos da Lamborghini. O servidor lê uma base de dados no formato CSV, interpreta as regras de herança das categorias de veículos (`V12Hibrido` e `SuperSUV`) e entrega uma lista completa ou filtrada conforme a escolha do usuário na URL.
+- **Endpoints desenvolvidos:**
+  * `GET /modelos/todos` — Lê o arquivo CSV, faz o `split(";")` e instancia as classes filhas corretas.
+  * `GET /modelos/categoria/{tipo}` — Filtra os veículos da categoria especificada (`v12` ou `suv`) usando o operador `instanceof`.
+- **Conceitos aplicados:** Herança de classes, manipulação de arquivos estruturados (CSV), uso de parâmetros de caminho na URL e filtros de busca com listas.
 
-### Pré-requisitos
-* Qualquer navegador web moderno (Google Chrome, Mozilla Firefox, Microsoft Edge ou Safari).
-* Não requer instalação de Node.js, gerenciadores de pacotes (npm/yarn) ou compiladores.
-
-### Como Rodar
-1. Baixe ou clone o repositório.
-2. Certifique-se de manter os arquivos em suas pastas originais para preservar os caminhos relativos de imagens, fontes e arquivos CSS/JS.
-3. Execute o arquivo `index.html` diretamente no navegador ou utilize a extensão **Live Server** no VS Code.
+📂 **[Acessar arquivos desta atividade](#)**
 
 ---
 
-## 🤝 6. Contribuição e Licença
+### 🏆 3. O Portal de Configuração (L-Code Hackathon)
+- **O que faz:** Atua como o painel de controle de pedidos do estúdio de customização. Ao ser acionado pela web, o servidor processa em lote um arquivo com pedidos de configuração brutos, valida as regras de elegibilidade (disponibilidade do motor e personalização *Ad Personam*), gera arquivos separados de pedidos aprovados e pendências de fábrica, e retorna um relatório estatístico em tempo real.
+- **Endpoints desenvolvidos:**
+  * `POST /configurador/processar` — Valida os pedidos, gera os arquivos locais de saída (`pedidos_aprovados.txt` e `pendencias_fabrica.txt`) e retorna um JSON com o resumo do processamento.
+- **Conceitos aplicados:** Validação de regras de negócio complexas, leitura/escrita simultânea de múltiplos arquivos com `BufferedReader`/`BufferedWriter` e criação de objetos de transferência de dados (DTOs) para respostas personalizadas.
 
-Contribuições, correções de bugs e sugestões de melhorias são bem-vindas! Sinta-se à vontade para abrir uma *Issue* ou enviar um *Pull Request*.
+📂 **[Acessar arquivos desta atividade](#)**
 
-*Projeto desenvolvido com fins educacionais e de demonstração baseados na identidade visual da Automobili Lamborghini S.p.A.*
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Função no Projeto |
+| :--- | :--- |
+| **Java** | Linguagem de programação principal do ecossistema. |
+| **OpenAPI / Swagger** | Documentação e testes interativos dos endpoints da API. |
+| **JSON** | Formato de comunicação e transferência de dados entre a API e o cliente. |
+| **TXT / CSV** | Utilizados como persistência local de dados (simulando bancos de dados em arquivos). |
+
+---
+
+*Projeto desenvolvido para fins educacionais e demonstrativos integrando conceitos de Java Web com a identidade visual da Automobili Lamborghini.*
