@@ -17,7 +17,7 @@ Toda a API do projeto foi modelada e documentada para garantir padronização, t
 - **Padrão OpenAPI 3.0.3:** Especificação completa com descrições de rotas, schemas de dados, códigos de resposta HTTP e exemplos de payload JSON.
 - **Testes Interativos:** Compatível diretamente com o **Swagger Editor** e **Postman**.
 
-📄 **[Acessar Arquivo Swagger (swagger.yaml)](#)** *(Substitua este link pelo arquivo do seu projeto)*
+📄 **[[Acessar Arquivo Swagger (swagger.yaml)](https://github.com/danilodorella2009-sudo/projeto-lamborghini-fase1/blob/main/documentacao-site-lamborghini%20(2).pdf)](#)** *(Substitua este link pelo arquivo do seu projeto)*
 
 ---
 
