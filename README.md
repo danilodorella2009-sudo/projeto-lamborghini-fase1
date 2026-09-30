@@ -1,49 +1,58 @@
-# 🏎️ Engenharia Reversa - Fase 1: Lamborghini
+<div align="center">
 
-Projeto desenvolvido para a atividade de **Engenharia Reversa (Fase 1)**, focado no estudo, análise e replicação da interface visual (*Front-End*) da montadora **Automobili Lamborghini**.
+# 🏎️ AUTOMOBILI LAMBORGHINI
 
----
+### *Design, Performance e Inovação Web*
 
-## 📌 Sobre o Projeto
-
-O objetivo desta fase é replicar com precisão a **Front Page** (página principal) e a **Estrutura de Menus** do site oficial da Lamborghini, aplicando conceitos de desenvolvimento web para recriar o design, layout e identidade visual da marca.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5**: Estruturação semântica da página principal e menus.
-- **CSS3 / Sass**: Estilização, layout responsivo e reprodução da identidade visual.
-- **JavaScript**: Lógica de interatividade visual básica e animações da interface.
+![Lamborghini Status](https://img.shields.io/badge/STYLE-LAMBORGHINI-FFC000?style=for-the-badge&logo=lamborghini&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
-## 📋 Checklist de Implementação (Fase 1)
+</div>
 
-Este checklist detalha todos os elementos desenvolvidos nesta fase para orientar a próxima equipe que assumir o projeto:
+## 📌 Links Rápidos & Acesso Direto
 
-- [x] **Escolha da Montadora**: Automobili Lamborghini.
-- [x] **Estrutura da Front Page**:
-  - [x] Cabeçalho (Header) com logo e barra de navegação.
-  - [x] Seção principal (Hero Section) com destaque visual da marca.
-  - [x] Seção de exibição de modelos de veículos.
-  - [x] Rodapé (Footer) institucional com links e direitos autorais.
-- [x] **Menus de Navegação**:
-  - [x] Estrutura visual do menu principal replicada.
-  - [x] Submenus e categorias organizados *(sem interação/funcionalidade completa conforme o escopo da Fase 1)*.
-- [x] **Identidade Visual e Layout**:
-  - [x] Paleta de cores oficial (Preto, Dourado/Amarelo e Branco).
-  - [x] Tipografia e espaçamentos alinhados ao design original.
-  - [x] Adaptabilidade/Responsividade para diferentes telas.
+Acesse as seções principais e materiais do projeto através dos links abaixo:
+
+* 📄 **[Tópico / Código do HTML](#)** *(Cole aqui o seu link do arquivo ou repositório HTML)*
+* 📚 **[Documentação Completa do Projeto](#)** *(Cole aqui o seu link da documentação oficial)*
 
 ---
 
-## 📂 Estrutura de Pastas
+## ⚡ Sobre o Projeto
+
+Este projeto é um site institucional e promocional inspirado na prestigiada marca **Lamborghini**. Desenvolvido com foco em alta performance, responsividade e estética *premium*, o site explora o uso avançado de **HTML5**, **CSS3** e **JavaScript Vanilla** (sem dependências externas de frameworks).
+
+O destaque técnico do projeto é a implementação de menus overlay, modais, carrossel de vídeos/imagens e seletores de cor utilizando recursos nativos do CSS e manipulação leve do DOM em JS.
+
+---
+
+## 📁 Estrutura do Repositório
 
 ```text
-├── assets/
-│   ├── css/          # Estilos e temas visuais
-│   ├── js/           # Scripts de suporte visual
-│   └── images/       # Logotipos e imagens dos veículos
-├── index.html        # Página principal (Front Page)
-└── README.md         # Documentação e checklist da entrega
+.
+├── index.html                  # Página Inicial (Home)
+├── index.css                   # Estilos da Home
+├── models.html                 # Catálogo de Modelos (Tema claro)
+├── models.css                  # Estilos da página de Modelos
+├── search.html                 # Sistema de Busca
+├── search.css                  # Estilos do Busca
+├── dealer-locator.html         # Localizador de Concessionárias
+├── dealer-locator.css          # Estilos do Localizador
+├── script.js                   # Lógica dinâmica do Carrossel e Abas
+├── global.css                  # Variáveis de tema e estilos globais
+├── imgs/                       # Assets de imagens, logos e vídeos
+├── configurador/
+│   └── configurator.html       # Estúdio / Configurador do Revuelto SV
+├── revuelto-sv/
+│   ├── revuelto-sv.html        # Página exclusiva do Revuelto SV
+│   └── revuelto.css            # Estilos da página Revuelto SV
+├── miura-sv/
+│   ├── miura-sv.html           # Página histórica do Miura SV
+│   └── miura-sv.css            # Estilos da página Miura SV
+└── urus-se/
+    ├── urus-se.html            # Página do SUV Urus SE
+    └── urus-se.css             # Estilos da página Urus SE
